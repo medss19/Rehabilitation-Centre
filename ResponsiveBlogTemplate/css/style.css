@@ -1,0 +1,182 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration: none;
+  border:none;
+  outline:none;
+  scroll-behaviour:smooth;  
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #f7f3e1;
+  --second-bg-color: #f2edaa;
+  --text-color: #272725;
+  --main-color:#10100f;
+}
+
+html{
+  font-size: 72.5%;
+  /* overflow: hidden; */
+
+}
+
+body{
+  background: #f7f3e1;
+  color:var(--text-color);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: rgba(255, 255, 255, 0.5); /* Replace with your desired background color and opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.logo-image {
+  width: 50px; 
+  height: 53px; 
+  margin-left: -205px; 
+}
+
+.navbar a{
+  font-size: 1.7rem;
+  color:var(--text-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+}
+
+.navbar a:hover{
+  color:rgb(60, 59, 59);
+  background-color: #ddbaec;
+
+}
+
+.navbar a {
+  color: rgb(53, 52, 52); /* Default text color */
+  background-color: transparent;
+  background-blend-mode: color; /* Default background color */
+  border-radius: 20px;
+  text-decoration: none; /* Remove underline by default */
+  padding: 10px 10px; /* Add padding for better hover effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+.navbar .login-signup {
+  color: #fff; /* Text color */
+  background-color: #000; /* Background color */
+  text-decoration: none; /* Remove underline by default */
+  padding: 10px 10px; /* Padding for the items */
+  
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("../img/11.svg");
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 355px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+.home-articles {
+  padding: 18px;
+  background-color: rgb(248, 239, 239, 0.5);
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;  
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+}
